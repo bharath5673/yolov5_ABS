@@ -48,7 +48,7 @@ For more detailed usage instructions and options, refer to the project documenta
 ### Run
 
 ```bash
-python3 yoloV5_sim.py
+python3 yoloV5_abs.py
 ```
 
 ### Contributing
