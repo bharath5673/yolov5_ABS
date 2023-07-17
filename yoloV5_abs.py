@@ -3,7 +3,7 @@ import torch
 import numpy as np
 
 # Load the YOLOv5 model
-model_path = '../yolo/yolov5s.pt'
+model_path = 'yolov5s.pt'
 
 # device = "cpu"  # for cpu
 device = 0  # for gpu
@@ -11,8 +11,7 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path)  # local
 model.to(device)
 
 # Load the video
-# video = cv2.VideoCapture('../yolo/videos/test4.mp4')
-video = cv2.VideoCapture('../yolo/videos/run11.mp4')
+video = cv2.VideoCapture('trimmedVideo_11.mp4')
 
 
 width, height = 1280, 720
@@ -37,6 +36,7 @@ dist_ = 12
 while True:
     # Read the next frame
     success, frame = video.read()
+    frame = cv2.resize(frame, (1280, 720))
     if not success:
         break
 
@@ -71,7 +71,7 @@ while True:
 
 
         # Threshold score
-        if score >= 0.5:
+        if score >= 0.4:
 
             # Calculate the centroid coordinates
             if xmin < frame.shape[1] // 2:
