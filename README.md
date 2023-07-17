@@ -41,7 +41,7 @@ pip3 install torch opencv numpy
 1. Download pre-trained YOLOv5 weights or train your own model.
 2. Provide the path to the YOLOv5 weights in the code.
 3. Run the script with the video file.
-4. View the object detection results and Bird's Eye View visualization.
+4. View the results. 
 
 For more detailed usage instructions and options, refer to the project documentation.
 
