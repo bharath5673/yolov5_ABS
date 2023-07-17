@@ -2,6 +2,8 @@
 
 AI-Assisted SmartBrake is an innovative Automatic Braking System that harnesses the power of YOLOv5 and OpenCV to provide advanced object detection and collision avoidance capabilities. This cutting-edge system is designed specially for robots and even enhance road safety and prevent accidents by detecting potential obstacles, pedestrians, and vehicles in real-time.
 
+<img src="demo.gif" width="1000"/> 
+
 ### Features:
 
 YOLOv5 Object Detection: Utilizes the state-of-the-art YOLOv5 model for robust and accurate object detection.
